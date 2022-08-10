@@ -1,0 +1,28 @@
+public class Chokis {
+    static boolean bisiesto(int entradaYear){
+    int p,q,r;
+    p=entradaYear%4;
+    q=entradaYear%100;
+    r=entradaYear%400;
+        return p==0 &(q!=0 || r==0);
+}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        char continuar='s';
+        while (continuar == 's'){
+        //int(input("por favor ingrese el año))
+        String entrada=JOptionPane.showInputDialog(null,"Por favor ingrese el año");
+        int miEntrada=Integer.parseInt(entrada);
+        Integer.parseInt(entrada);
+        if (bisiesto(miEntrada)==true){
+            System.out.println("El año es bisiesto!");
+        }else{
+            System.out.println("El año no es bisiesto");
+        }
+        continuar=JOptionPane.showInputDialog(null,"desea continuar? (s/n").charAt(0);
+        // TODO code application logic here
+        }
+    }      
+}
