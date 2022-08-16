@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 
-Scanner sc = new Scanner (System.in);
+Scanner num = new Scanner (System.in);
         int numero;
         int a = 0;
         System.out.println("Numero: ");
-        numero = sc.nextInt();
+        numero = num.nextInt();
         
         for (int i = 1; i <= numero; i++) {
             if (numero%i == 0){
